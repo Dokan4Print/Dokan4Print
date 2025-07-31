@@ -22,6 +22,11 @@
         <a href="product-ar.html" class="btn">تفاصيل المنتج</a>
       </div>
     </div>
+
+    <!-- ✅ زر تجربة الإرسال -->
+    <div style="margin-top: 40px;">
+      <button onclick="sendTestToSheet()" class="btn">🚀 تجربة إرسال بيانات</button>
+    </div>
   </main>
 
   <div data-include="gallery"></div>
@@ -32,5 +37,36 @@
 
   <script src="js/loader.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- ✅ سكربت التجربة -->
+  <script>
+    function sendTestToSheet() {
+      const testData = [
+        {
+          invoiceCode: "TEST-1001",
+          lineId: "001",
+          product: "Test Mug",
+          gender: "ولد",
+          designCode: "HERO-001",
+          childName: "زياد",
+          image1: "https://example.com/image1.jpg",
+          image2: "https://example.com/image2.jpg",
+          notes: "ده طلب تجريبي"
+        }
+      ];
+
+      fetch("https://script.google.com/macros/s/AKfycbzd-Dkvz9qMEeqqz7i8f5m61hBPyyliAUiyuT01O3S8WS485pq1suzc3zUuWfaoDqpp/exec", {
+        method: "POST",
+        body: JSON.stringify({ contents: testData }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(res => res.json())
+      .then(data => console.log("✅ تم الإرسال:", data))
+      .catch(err => console.error("❌ حصل خطأ:", err));
+    }
+  </script>
+
 </body>
 </html>
