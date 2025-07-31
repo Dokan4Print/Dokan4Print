@@ -1,0 +1,49 @@
+<!-- ==========================
+📁 components/header-ar.html
+📄 الهيدر العربي
+========================== -->
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <a href="index-ar.html">
+        <img src="images/logo/300x100.png" alt="اللوجو" width="300" height="100">
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index-ar.html">الرئيسية</a></li>
+        <li class="has-dropdown">
+          <a href="#">المنتجات</a>
+          <ul class="dropdown">
+            <li><a href="product-ar.html?product=mug">مج حراري</a></li>
+            <li><a href="product-ar.html?product=zomzomia">زمزمية</a></li>
+            <li><a href="product-ar.html?product=bag">كيس هدايا</a></li>
+          </ul>
+        </li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-switch" onclick="location.href='index-en.html'">EN</button>
+      <button class="icon-btn"><img src="images/icon/search.png" alt="بحث"></button>
+      <button class="icon-btn"><img src="images/icon/user.png" alt="الحساب"></button>
+      <button class="icon-btn"><img src="images/icon/cart.png" alt="السلة"></button>
+    </div>
+
+    <button class="menu-toggle" id="mobileMenuToggle">
+      <img src="images/icon/menu.png" alt="قائمة">
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index-ar.html">الرئيسية</a></li>
+      <li><a href="#">المنتجات</a></li>
+      <li><a href="#">من نحن</a></li>
+      <li><a href="#">اتصل بنا</a></li>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,46 @@
+<!-- 📁 File: components/header-en.html -->
+<!-- ✅ English header with responsive and sticky design -->
+
+<header class="main-header ltr">
+  <div class="container">
+    <div class="logo">
+      <a href="index-en.html">
+        <img src="brand/300x100.png" alt="Logo" width="300" height="100">
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#">Products</a>
+          <ul class="dropdown">
+            <li><a href="product-en.html?product=mug">Thermal Mug</a></li>
+            <li><a href="product-en.html?product=zomzomia">Water Bottle</a></li>
+            <li><a href="product-en.html?product=bag">Gift Bag</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-switch" onclick="location.href='index-ar.html'">ع</button>
+      <button class="icon-btn"><i class="icon-search"></i></button>
+      <button class="icon-btn"><i class="icon-user"></i></button>
+      <button class="icon-btn"><i class="icon-cart"></i></button>
+    </div>
+
+    <button class="menu-toggle" id="mobileMenuToggle"><i class="icon-menu"></i></button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index-en.html">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</header>

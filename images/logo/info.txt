@@ -1,0 +1,4 @@
+📁 images/logo:
+- logo-300x100.png
+- logo-square.png
+- logo-circle.png

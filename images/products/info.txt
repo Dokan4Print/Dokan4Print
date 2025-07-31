@@ -1,0 +1,4 @@
+📁 images/products:
+- product-mug.jpg
+- product-bag.jpg
+- product-zomzomia.jpg
